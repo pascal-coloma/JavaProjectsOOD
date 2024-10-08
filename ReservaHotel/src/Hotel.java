@@ -16,12 +16,12 @@ public class Hotel {
     private ArrayList<Habitacion> habitDispo;
 
     public Hotel() {
-        this.habitDispo = new ArrayList<>();
     }
 
     public Hotel(String idHotel, String nombreHotel) {
         this.idHotel = idHotel;
         this.nombreHotel = nombreHotel;
+        this.habitDispo = new ArrayList<>();
     }
 
     public String getIdHotel() {
@@ -50,6 +50,7 @@ public class Hotel {
     
     public void aniadirHabitacion(Habitacion habitacion){
         habitDispo.add(habitacion);
+       
     }
 
     @Override

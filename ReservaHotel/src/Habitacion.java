@@ -48,7 +48,7 @@ public class Habitacion {
 
     @Override
     public String toString() {
-        return "Habitacion{" + "numHab=" + numHab + ", precioNoche=" + precioNoche + ", disponible=" + disponible + '}';
+        return "\nNumero Habitacion: " + numHab + " Precio por noche: $" + precioNoche;
     }
     
     
