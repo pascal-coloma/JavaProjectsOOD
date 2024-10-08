@@ -15,5 +15,11 @@ public class Test {
         
         Restar resta1 = new Restar(30,10);
         System.out.println("Resultado de la resta: " + resta1.operar());
+        
+        Multiplicar multi1 = new Multiplicar(6, 5);
+        System.out.println("Resultado de multiplicacion: " + multi1.multiplicar());
+        System.out.println(multi1.multiplicar(3.5f, 6.8f));
+        
+        
     }
 }
