@@ -2,16 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package donajuanita;
 
 /**
  *
- * @author GaboGrobier
+ * @author colom
  */
 public class Producto {
+    
     private String nombre;
     private double precio;
-    private int cantidad;
+    private int cantidad; 
+
+    public Producto() {
+    }
 
     public Producto(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
@@ -43,32 +46,10 @@ public class Producto {
         this.cantidad = cantidad;
     }
     
-    public void mostrarProductos(){
-        System.out.println("El nombre del producto es " + this.nombre);
-        System.out.println("La cantidad es " + this.cantidad);
-        System.out.println("El precio unitario es " + this.precio);
+    public String mostrarDetalles(){
+        return "Nombre producto: " + nombre + "\nPrecio: " + precio + "\nCantidad: " + cantidad;
+
     }
-    
-    public boolean descontarProducto(Producto producto){
-        if (producto.getCantidad()>0){
-            producto.cantidad--;
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    public boolean aumentarProducto(Producto producto){
-        if (producto.cantidad <0){
-            return false;
-        
-        }
-        else{
-            producto.cantidad++;
-            return true;
-        }
-            
-    }
-    
+
     
 }
