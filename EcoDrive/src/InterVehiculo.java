@@ -7,8 +7,10 @@
  *
  * @author colom
  */
-public interface BonusCalculable {
+public interface InterVehiculo {
+    void cargarBateria();
     
-    double calcularBonus();
+    void arrancar();
     
+    void frenar();
 }

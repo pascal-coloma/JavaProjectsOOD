@@ -49,10 +49,18 @@ public class Empleado {
     }
     
     public double calcularSalario(){
+        
         double porcDescto = 17.6f;
-        double dsctoDinero = sueldoBase * porcDescto;
+        double dsctoDinero = sueldoBase * porcDescto / 100;
         double salarioLiquido = sueldoBase - dsctoDinero;
         
-        return salarioLiquido;
+        return Math.round(salarioLiquido);
     }
+
+    @Override
+    public String toString() {
+        return "Empleado \nID Empleado: " + idEmpleado + "\nNombre: " + nombre + "\nSueldo Base: $" + sueldoBase + "\nSalario Liquido: $" + calcularSalario();
+    }
+    
+    
 }

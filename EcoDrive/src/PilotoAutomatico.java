@@ -7,8 +7,6 @@
  *
  * @author colom
  */
-public interface BonusCalculable {
-    
-    double calcularBonus();
-    
+public interface PilotoAutomatico {
+    void activarPiloto();
 }

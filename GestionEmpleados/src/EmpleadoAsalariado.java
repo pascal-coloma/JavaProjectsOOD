@@ -48,8 +48,9 @@ public class EmpleadoAsalariado extends Empleado implements BonusCalculable {
 
     @Override
     public double calcularBonus() {
-        double bonus = 0;
-        return bonus;
+        double bono = 100_000;
+        
+        return bono;
     }
 
     

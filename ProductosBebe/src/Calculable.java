@@ -7,8 +7,7 @@
  *
  * @author colom
  */
-public interface BonusCalculable {
+public interface Calculable {
     
-    double calcularBonus();
-    
+    void calcularPrecioFinal();
 }
